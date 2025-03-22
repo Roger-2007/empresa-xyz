@@ -27,6 +27,12 @@ def loginUser():
         else:
            print("Correo o contraseña incorrectos")
 
-    
+option = int(input("\nIngrese un numero\n1. Crear Usuario\n2. Iniciar sesion\n3. Salir"))
+while option!=3:
+    match option:
+        case 1: createUser()
+        case 2: loginUser()
+        case 3: print("Te has salido correctamente")
+    option = int(input("\nIngrese un numero\n1. Crear Usuario\n2. Iniciar sesion\n3. Salir"))
         
 
